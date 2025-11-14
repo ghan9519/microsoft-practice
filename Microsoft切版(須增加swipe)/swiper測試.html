@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+                <source media="(min-width:1400px)" srcset="./ms-img/swiper/1-1.avif">
+                <source media="(min-width:1084px)" srcset="./ms-img/swiper/2-1.avif">
+                <source media="(min-width:860px)" srcset="./ms-img/swiper/3-1.avif">
+                <source media="(min-width:540px)" srcset="./ms-img/swiper/4-1.avif">
+                <img class="w-100" src="./ms-img/swiper/4-1.avif" alt="">
+            </picture>
+
+      </div>
+      <div class="swiper-slide">
+        <picture>
+                <source media="(min-width:1400px)" srcset="./ms-img/swiper/1-2.avif">
+                <source media="(min-width:1084px)" srcset="./ms-img/swiper/2-2.avif">
+                <source media="(min-width:860px)" srcset="./ms-img/swiper/3-2.avif">
+                <source media="(min-width:540px)" srcset="./ms-img/swiper/4-2.avif">
+                <img class="w-100" src="./ms-img/swiper/4-1.avif" alt="">
+            </picture>
+      </div>
+
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+
+      navigation: {
+
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+    });
+  </script>
+</body>
+
+</html>

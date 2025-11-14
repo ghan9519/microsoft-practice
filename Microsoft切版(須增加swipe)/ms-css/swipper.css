@@ -1,0 +1,63 @@
+.swiper-wrapper {
+  /* background-color: red; */
+  padding-bottom: 70px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: calc(100% - 20px);
+  color:black;
+  z-index: 19;
+  font-size: 16px;
+}
+
+.swiper-button-prev {
+  left: 50%;
+  transform: translateX(-100px);
+}
+.swiper-button-next {
+  right: 50%;
+  transform: translateX(100px);
+}
+
+.swiper-button-next:after,  .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 1;
+  /* 為了壓過原來的權重 => 使用 !important; */
+  margin: 0 20px!important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+}
+

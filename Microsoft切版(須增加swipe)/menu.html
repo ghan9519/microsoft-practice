@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+        background-color: aqua;
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+
+    }
+li{
+    padding: 16px 8px 10px;
+}
+ul li{
+    background-color: brown;
+}
+ul li a{
+    background-color: chartreuse;
+    padding: 16px 8px 10px;
+}
+ul li:hover span{
+    border-bottom: 3px solid red;
+}
+ul a:focus{
+    outline: 5px dashed black;
+    outline-offset:  -10px;
+}
+ul a focus span{
+    border-bottom: 3px solid red;
+}
+
+
+
+
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li><a href="#"><span>aaa</span></a></li>
+        <li><a href="#"><span>bbb</span></a></li>
+        <li><a href="#"><span>ccc</span></a></li>
+    </ul>   
+</body>
+</html>
